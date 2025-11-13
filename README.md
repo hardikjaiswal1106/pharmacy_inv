@@ -10,7 +10,7 @@ This system provides two roles — Admin and Client — to handle medicine stock
 
 ---
 
-# 🩺 Overview
+# Overview
 
 This project simulates a real-world pharmacy management system using Python.
 
@@ -19,9 +19,9 @@ This project simulates a real-world pharmacy management system using Python.
 
 ---
 
-# 🚀 Key Features
+# Key Features
 
-## 👨‍💼 Admin Functionalities
+## Admin Functionalities
 
 * Add, update, or delete medicines
 * View all medicines in a formatted table
@@ -33,7 +33,7 @@ This project simulates a real-world pharmacy management system using Python.
 * Robust input validation to prevent system crashes
 * Automatic handling of invalid or empty JSON files
 
-## 🧑‍⚕️ Client Functionalities
+## Client Functionalities
 
 * Register as a new client and receive a unique Client ID
 * Login with client ID
@@ -46,7 +46,7 @@ This project simulates a real-world pharmacy management system using Python.
 
 ---
 
-# 🗂️ Project Structure
+# Project Structure
 
 ```
 pharmacy-system/
@@ -62,7 +62,7 @@ pharmacy-system/
 
 ---
 
-# 🛠️ Tech Stack
+# Tech Stack
 
 | Component | Technology Used                  |
 | --------- | -------------------------------- |
@@ -73,7 +73,7 @@ pharmacy-system/
 
 ---
 
-# 💡 Use Case
+# Use Case
 
 This project can be used as:
 
@@ -83,7 +83,7 @@ This project can be used as:
 
 ---
 
-# 💻 Sample CLI Flow
+# Sample CLI Flow
 
 **💊 Pharmacy Inventory & Prescription System 💊**
 
@@ -94,7 +94,7 @@ This project can be used as:
 
 ---
 
-# 🖥️ Admin Menu
+# Admin Menu
 
 ```
 === Admin Menu ===
@@ -108,7 +108,7 @@ This project can be used as:
 
 ---
 
-# 🧾 Client Menu
+# Client Menu
 
 ```
 === Client Menu ===
@@ -121,7 +121,7 @@ This project can be used as:
 
 ---
 
-# ▶️ How to Run
+# How to Run
 
 ## 1. Clone the Repository
 
@@ -154,7 +154,7 @@ python main.py
 
 ---
 
-# 🔗 Public Sources
+# Public Sources
 
 These resources were used for reference and simulation of realistic pharmacy data:
 
@@ -166,7 +166,7 @@ These resources were used for reference and simulation of realistic pharmacy dat
 
 ---
 
-# 🤝 Contributing
+# Contributing
 
 Contributions are welcome!
 
@@ -175,11 +175,13 @@ Contributions are welcome!
 3. Commit your changes
 4. Submit a pull request
 
-💬 Suggestions and feature ideas are always appreciated.
+Suggestions and feature ideas are always appreciated.
+
+If you found this project helpful, consider giving it a star ⭐!
 
 ---
 
-# ❤️ Acknowledgment
+# Acknowledgment
 
 Developed with 💊 by dedicated students to promote learning and innovation in Python-based Inventory Management Systems.
 
