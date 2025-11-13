@@ -1,148 +1,102 @@
-# 💊 Pharmacy Inventory & Prescription System 💊
-
-A Python-based Command-Line Interface (CLI) project designed to manage medicines, clients, and sales records efficiently in a pharmacy environment.
-
-This system provides two roles — Admin and Client — to handle medicine stock, generate reports, and manage customer prescriptions, all stored securely in JSON files.
-
-# Overview 
-
-This project simulates a real-world pharmacy management system using Python.
-
-Admins can control inventory, monitor stock levels, and generate detailed reports.
-
-Clients can browse medicines, place orders, and view purchase history.
-
-# Key Features
-
-# Admin Functionalities
-
-- Add, update, or delete medicines
-
-- View all medicines in a formatted table
-
-- Generate detailed inventory reports:
 
 
-    - Low stock medicines
+---
 
-    - Medicines nearing expiry
+# Pharmacy Inventory & Prescription System 💊
 
-    - Total stock value
+A **Python-based Command-Line Interface (CLI)** project designed to manage medicines, clients, and sales records efficiently in a pharmacy environment. This system provides a structured and secure way to handle inventory, prescriptions, and customer data using JSON files.
 
-- Prevents system crashes with robust input validation
+---
 
-- Automatic handling of invalid or empty JSON files
+## Features
 
-# Client Functionalities
+### Admin Role
 
-- Register as a new client and receive a unique Client ID
+* **Manage Medicines**: Add, update, and delete medicine details.
+* **Stock Management**: Track quantity and availability of medicines.
+* **Generate Reports**: View sales, stock levels, and client activity.
 
-- Login with client ID
+### Client Role
 
-- View available medicines
+* **Register & Login**: Secure client registration.
+* **Browse Medicines**: View available medicines and their details.
+* **Place Orders**: Order medicines with prescription tracking.
+* **View Orders**: Track order history.
 
-- Place multiple orders in a single session
+---
 
-- Generate professional receipts with total bill
+## Data Storage
 
-- View purchase history
+The system uses **JSON files** to securely store all data:
 
-- Cancel pending orders
+* `medicines.json` – Stores medicine details.
+* `clients.json` – Stores registered client information.
+* `orders.json` – Stores client orders and prescriptions.
 
-- Smooth navigation with colored success/error prompts
+---
 
+## Project Structure
 
-# Tech Stack
-| Component | Technology Used                  |
-| --------- | -------------------------------- |
-| Language  | Python 3.x                       |
-| Storage   | JSON (local file-based database) |
-| Libraries | json, os, tabulate, datetime     |
-| Interface | Command-Line (CLI)               |
+```
+pharmacy-system/
+│
+├── main.py              # Main entry point (CLI menu)
+├── admin_module.py      # Admin functions (CRUD, reports)
+├── client.py            # Client functions (register, order, view)
+├── file_utils.py        # File I/O and JSON management
+├── medicines.json       # Medicine data file
+├── clients.json         # Client data file
+├── orders.json          # Orders data file
+└── README.md            # Project documentation
+```
 
+---
 
-# Sample CLI Flow
+## Installation
 
-💊 Pharmacy Inventory & Prescription System 💊
-1. Admin Login
-2. Client Login
-3. Register as New Client
-4. Exit
+1. **Clone the repository**:
 
+```bash
+git clone <repository-url>
+cd pharmacy-system
+```
 
-# Admin Menu
+2. **Install required packages** (if any):
 
-=== Admin Menu ===
-1. Add Medicine
-2. Update Medicine
-3. Delete Medicine
-4. View Medicines
-5. Generate Report
-6. Logout
+```bash
+pip install -r requirements.txt
+```
 
+3. **Run the program**:
 
-# Client Menu
-=== Client Menu ===
-1. Search Medicine
-2. Place Order
-3. View Orders
-4. Cancel Order
-5. Logout
-
-# How to Run
-
-# 1. Clone the Repository
-
-git clone https://github.com/hardikjaiswal1106/Pharmacy-Inventory-System.git
-
-cd Pharmacy-Inventory-System
-
-# 2. Install Required Library
-pip install tabulate
-
-# 3. Run the Program
+```bash
 python main.py
+```
 
-# 4. Admin Login
+---
 
-- Username: admin
+## Usage
 
-- Password: admin123
+1. Launch the system using `python main.py`.
+2. Select your role: **Admin** or **Client**.
+3. Follow on-screen instructions to manage medicines, clients, or orders.
 
-# 5. Client Usage
+---
 
-- Register as a new client → receive a client ID
+## Technologies Used
 
-- Login using that client ID → explore medicines & place orders
+* Python 3.x
+* JSON for data storage
+* Command-Line Interface (CLI)
 
-# Public Sources
+---
 
-These resources were used for reference and simulation of realistic pharmacy data:
+## Future Enhancements
 
-- Drugs.com – Official Drug Database
+* GUI-based interface using Tkinter or PyQt.
+* Integration with a database (SQLite/MySQL) for large-scale deployment.
+* Email/SMS notifications for order confirmation.
 
-- National Library of Medicine – DailyMed
+---
 
-- U.S. FDA – Drug Approvals and Databases
 
-- World Health Organization (WHO) – Essential Medicines List
-
-- Kaggle – Medicine & Pharmacy Datasets
-
-# Contributing
-
-Contributions are welcome!
-
-1. Fork the repository
-
-2. Create a new branch (feature-improvement)
-
-3. Commit your changes
-
-4. Submit a pull request
-
-💬 Suggestions and feature ideas are always appreciated.
-
-# Acknowledgment
-
-Developed with 💊 by dedicated students to promote learning and innovation in Python-based Inventory Management Systems.
