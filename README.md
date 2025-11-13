@@ -57,7 +57,7 @@ pharmacy-system/
 1. **Clone the repository**:
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/hardikjaiswal1106/pharmacy_inv/
 cd pharmacy-system
 ```
 
