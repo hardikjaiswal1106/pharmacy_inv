@@ -2,18 +2,15 @@ import json
 import os
 
 def load_data(filename):
-    """
-    Loads JSON data safely from a file.
-    Returns an empty list if file doesn't exist, is empty, or corrupted.
-    """
+
     try:
         if not os.path.exists(filename):
-            return []  # File not present — start fresh
+            return []  
 
         with open(filename, 'r') as f:
             content = f.read().strip()
             if not content:
-                return []  # Empty file — just return []
+                return [] 
 
             return json.loads(content)
 
@@ -28,9 +25,7 @@ def load_data(filename):
 
 
 def save_data(filename, data):
-    """
-    Saves data safely into a JSON file with proper formatting.
-    """
+   
     try:
         with open(filename, 'w') as f:
             json.dump(data, f, indent=4)
